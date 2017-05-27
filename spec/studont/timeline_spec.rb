@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe Studont::Timeline do
   let(:instance) { double('Instance') }
 
-    def filter_statuses_from_id(statuses: statuses, from_id: nil)
+    def filter_statuses_from_id(statuses:, from_id: nil)
       statuses.select { |status| from_id.nil? || status['id'] <= from_id }
     end
 
