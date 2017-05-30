@@ -1,0 +1,5 @@
+inherit_from: ../.rubocop.yml
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context', 'shared_examples']
+Lint/UnusedBlockArgument:
+  AllowUnusedKeywordArguments: true
